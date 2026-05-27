@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0;
+            box-sizing: border-box; */
+        }
+        /* p{
+            width: 300px;
+            height: 300px;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: aqua;
+            border: 10px solid red;
+            padding: 50px 20px 10px;
+            margin: 50px;
+
+        } */
+         body{
+            position: absolute;
+            left: 45%;
+            
+         }
+        .main{
+            width: 150px;
+            height: 250px;
+            /* background-color: aquamarine; */
+            /* background-color: rgba(255, 0, 0, 0.8); */
+            background-color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            
+         }
+         .circle1,
+         .circle2,
+         .circle3{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            opacity: 0.25;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            animation: light-cycle 6s infinite;
+         }
+         .circle1{
+            background-color: red;
+            color: red;
+            animation-delay: 0s;
+         }
+         .circle2{
+            background-color: yellow;
+            color: yellow;
+            animation-delay: 2s;
+         }
+         .circle3{
+            background-color: green;
+            color: green;
+            animation-delay: 4s;
+         }
+         .circle1:hover,
+         .circle2:hover,
+         .circle3:hover{
+            opacity: 1;
+         }
+         @keyframes light-cycle{
+            0%,
+            20%{
+                opacity: 1;
+                box-shadow: 0 0 18px currentColor;
+            }
+            30%,
+            100%{
+                opacity: 0.25;
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+         }
+         .line{
+            width: 20px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            left: 44%;
+            border-radius: 3px;
+         }
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+     </div>
+     <div class="line"></div>
+</body>
+</html>

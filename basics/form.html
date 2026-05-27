@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h1 style="text-align: center;">Student Registration Form</h1>
+    <form action="" style="">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>
+                <h2>Personal Information</h2>
+            </legend>
+            <label> Full Name: </label>
+            <input type="text" placeholder="John Doe" required>
+
+            <br><br>
+
+            <label for="email"> Email: </label>
+            <input id="email" type="email" placeholder="abc@example.com" required>
+
+            <br><br>
+
+            <label for="password"> Password: </label>
+            <input id="password" type="password" placeholder="******"" required>
+
+            <br><br>
+            <label for=" number">Phone Number: </label>
+            <input id="number" type="tel" placeholder="123-456-789">
+
+            <br><br>
+
+            <label for="date">DOB: </label>
+            <input type="date" id="date">
+
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Gender Information</h2>
+            </legend>
+
+            <label for="male">Male: </label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female: </label>
+            <input type="radio" id="female" name="gender">
+            <label for="Other">Other: </label>
+            <input type="radio" id="Other" name="gender">
+        </fieldset>
+        <br><br>
+
+        <!-- Course Information -->
+         <fieldset>
+            <legend>Course Information</legend>
+            <label for="course">Select Course: </label>
+            <select name="" id="course">
+                <option value="0">AI</option>
+                <option value="1">ML</option>
+                <option value="2">Web</option>
+                <option value="3">DSA</option>
+            </select>
+         </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Form</title>
+</head>
+<body>
+    <!-- Header -->
+    <header><h1>Job Application</h1></header>
+    <!-- Form -->
+     <form>
+        <!-- Personal Info -->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="John Doe" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="abc@example.com" required>
+            <br><br>
+            <label for="phone">Phone No.: </label>
+            <input type="tel" id="phone" placeholder="123-4567-891" required>
+            <br><br>
+            <label for="dob">DOB: </label>
+            <input type="date" id="dob">
+            <br><br>
+            <input type="submit">
+         </fieldset>
+
+         <br>
+<!-- Gender Information -->
+         <fieldset>
+            <legend>Gender Information</legend>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+            <br>
+         </fieldset>
+
+         <br><br>
+         <!-- Skill -->
+          <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="skill" id="mern">
+            <label for="mern">MERN</label>
+            <br>
+            <input type="checkbox" name="skill" id="DevOps">
+            <label for="DevOps">Dev-Ops</label>
+            <br>
+            <input type="checkbox" name="skill" id="AIDev">
+            <label for="AIDev">AI Developer</label>
+            <br>
+            <input type="checkbox" name="skill" id="Data">
+            <label for="Data">Data Analyst</label>
+            <br>
+          </fieldset>
+
+          <br><br>
+<!-- Additional Information -->
+          <fieldset>
+            <legend>Additional Information</legend>
+            <!-- Experience -->
+            <label for="Experience">Years of Experience: </label>
+            <select id="Experience">
+                <option disabled selected>Select Year</option>
+                <option>Fresher</option>
+                <option>1 Year</option>
+                <option>2 Years</option>
+                <option>3 Years</option>
+                <option>4+ YEars</option>
+            </select>
+
+            <br><br>
+            <!-- Location -->
+             <label for="location">Location: </label>
+             <select name="" id="location">
+                <option value="vd">Vadodara</option>
+                <option value="in">Indore</option>
+                <option value="nd">Noida</option>
+                <option value="hyd">Hyderabad</option>
+             </select>
+
+             <br><br>
+            <label for="resume">Upload Resume: </label>
+            <input type="file" id="resume" maxlength="10MB" accept=".pdf, .html, .docx, .tex">
+          </fieldset>
+
+          <br><br>
+
+          <!-- Submit Button -->
+           <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
+     </form>
+</body>
+</html>
