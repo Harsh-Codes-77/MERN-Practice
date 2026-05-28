@@ -1,0 +1,70 @@
+*{
+    margin: 8px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    background-color: Yellow;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.travel{
+    background-color: rgb(238, 238, 234);
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.location{
+    display: inline-block;
+    margin-left: 70%;
+    font-weight: 600;
+}
+.middle input{
+    width: 82%;
+    outline: none;
+    padding: 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 8px;
+}
+.box{
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+.hero .img{
+    display: inline-block;
+}
+.hero img{
+    height: 200px;
+    width: 400px;
+    border-radius: 8px;
+}
+.recommendation{
+    background-color: yellowgreen;
+    height: auto;
+    width: 100%;
+}
+.item{
+    display: inline-block;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.description, .about, .help{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15%;
+}
+.copy{
+    text-align: center;
+    color: rgb(209, 205, 205);
+}
