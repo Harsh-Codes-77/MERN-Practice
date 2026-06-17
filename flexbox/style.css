@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,4 +51,41 @@
 .secondPage p{
     font-size: 20px;
     color: #ffffff;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* justify-content: stretch; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* flex-flow: row wrap; */
+
+}
+
+.batch6{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
