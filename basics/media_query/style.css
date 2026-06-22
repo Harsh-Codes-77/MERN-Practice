@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100px;
+    width: 98%;
+    padding: 20px;
+    margin: 20px;
+    background-color: green;
+    border: 2px solid black;
+}
+
+/* Mobile View */
+
+@media (max-width: 576px) {
+    .container{
+        background-color: red;
+        width: 100%;
+    }
+}
+
+/* Tablet View */
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .container{
+        background-color: yellow;
+        width: 100%;
+    }
+}
+
+/* Laptop View */
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .container{
+        background-color: blue;
+        width: 100%;
+    }
+}
+
+/* Desktop View */
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    .container{
+        background-color: orange;
+        width: 100%;
+    }
+}
+
+/* Large Screen */
+
+@media (min-width: 1200px){
+    .container{
+        background-color: purple;
+        width: 100%;
+    }
+}
