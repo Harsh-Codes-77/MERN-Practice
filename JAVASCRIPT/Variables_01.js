@@ -109,3 +109,66 @@ if (true) {
 // 1. Block Scope: let and const have block scope, which helps prevent accidental variable overwrites and makes the code more predictable.
 // 2. No Hoisting Issues: Variables declared with let and const are not hoisted to the top of their block, reducing confusion about variable availability.
 // 3. Readability: Using const for variables that should not change makes the code easier to understand and maintain.
+
+
+// Datatypes in JavaScript:
+// 1. Primitive Datatypes: String, Number, Boolean, Null, Undefined, Symbol (ES6), BigInt (ES2020)
+// 2. Non-Primitive Datatypes: Object, Array, Function
+
+
+// Primitives are immutable, meaning their values cannot be changed once they are created. Non-primitives are mutable, meaning their values can be changed after they are created.
+
+// Type checking in JavaScript can be done using the typeof operator. For example:
+var myString = "Hello, World!";
+var myNumber = 42;
+var myBoolean = true;
+var myNull = null;
+var myUndefined;
+var mySymbol = Symbol("mySymbol");
+var myBigInt = 9007199254740991n;
+
+console.log(typeof myString); // "string"
+console.log(typeof myNumber); // "number"
+console.log(typeof myBoolean); // "boolean"
+console.log(typeof myNull); // "object" (this is a known quirk in JavaScript)
+console.log(typeof myUndefined); // "undefined"
+console.log(typeof mySymbol); // "symbol"
+console.log(typeof myBigInt); // "bigint"
+
+//  if we put 0, false, null, undefined, NaN, empty string in if condition then it will return false otherwise it will return true
+if (0) {
+    console.log("This will not be printed");
+} else {
+    console.log("0 is falsy"); // This will be printed
+}
+
+if (false) {
+    console.log("This will not be printed");
+} else {
+    console.log("false is falsy"); // This will be printed
+}
+
+if (null) {
+    console.log("This will not be printed");
+} else {
+    console.log("null is falsy"); // This will be printed
+}
+
+if (undefined) {
+    console.log("This will not be printed");
+} else {
+    console.log("undefined is falsy"); // This will be printed
+}
+
+if (NaN) {
+    console.log("This will not be printed");
+} else {
+    console.log("NaN is falsy"); // This will be printed
+}
+
+if ("") {
+    console.log("This will not be printed");
+} else {
+    console.log("Empty string is falsy"); // This will be printed
+}
+
