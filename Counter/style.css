@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+h1{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.button #increment, .button #decrement, #reset{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: Black;
+    border: 2px solid black;
+    border-radius: 5px;
+}

@@ -25,3 +25,6 @@ const array = [1, 2, 3, 4, 5];
 array.forEach((element) => {
     console.log(`ForEach loop element: ${element}`);
 });
+
+// For...in loop -> used to iterate over the properties of an object. It executes a block of code for each property in the object.
+// for of loop -> used to iterate over the values of an iterable object (like an array, string, or map). It executes a block of code for each value in the iterable object.
