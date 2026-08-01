@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Products</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#controls{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#controls button{
+    padding:10px 15px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#container{
+    width:700px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border:2px solid black;
+    padding:20px;
+    margin-bottom:15px;
+}
+
+.card img{
+    width:30%;
+    height:200px;
+
+}
+
+.fav{
+    background:yellow;
+}
+
+.action{
+    margin-top:15px;
+}
+
+.action button{
+    margin-right:8px;
+    padding:8px 12px;
+    cursor:pointer;
+}
+
+#result{
+    text-align:center;
+    font-size:20px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>E-Commerce Products</h1>
+
+<div id="controls">
+    <button id="firstBtn">First Product</button>
+    <button id="lastBtn">Last Product</button>
+    <button id="highlightBtn">Highlight All</button>
+    <button id="resetBtn">Reset</button>
+    <button id="countBtn">Total Products</button>
+</div>
+
+<div id="container">
+
+<div class="card">
+<h2>iPhone 16</h2>
+<img src="https://imgs.search.brave.com/1rz1GqjVdPwtd8n_0_L7xyMLMyK2fI4hI6q3bwJP5LA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0cv/MzEvaW1nMjUvV2ly/ZWxlc3MvTWFkaGF2/L0ZlYi9BcHBsZS9j/b21wL0FNWl9GYW1p/bHktU3RyaXBlX2lQ/aG9uZV8xNi5fQ0I1/NDk3ODU3ODlfLnBu/Zw">
+<div class="action">
+<button class="prevBtn">Previous</button>
+<button class="nextBtn">Next</button>
+<button class="favoriteBtn">Favorite</button>
+<button class="buyBtn">Buy</button>
+<button class="deleteBtn">Delete</button>
+</div>
+</div>
+
+<div class="card">
+<h2>Samsung S25</h2>
+<img src="https://imgs.search.brave.com/4cAI3f1xmeYrIuFHHixeWGkArpCyIxfyiYzMYEqNHiM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/OTEtaW1nLmNvbS9w/aWN0dXJlcy8xNTI3/MzgtdjYtc2Ftc3Vu/Zy1nYWxheHktczI1/LW1vYmlsZS1waG9u/ZS1ocmVzLTM1Lmpw/Zz90cg">
+<div class="action">
+<button class="prevBtn">Previous</button>
+<button class="nextBtn">Next</button>
+<button class="favoriteBtn">Favorite</button>
+<button class="buyBtn">Buy</button>
+<button class="deleteBtn">Delete</button>
+</div>
+</div>
+
+<div class="card">
+<h2>MacBook Air M4</h2>
+<img src="https://imgs.search.brave.com/-eZz5r0r0DNCemXUq606YmvHhyzjzdTGlmpdSMxb12E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/amlvc3RvcmUub25s/aW5lL3YyL2ptZC1h/c3AvamRwcm9kL3dy/a3IvcHJvZHVjdHMv/cGljdHVyZXMvaXRl/bS9mcmVlL29yaWdp/bmFsL2FwcGxlLzQ5/NDQ5NDUwOC8wL09j/QkJNLVhKYTQtcHBO/VlBLU1YybGUtQXBw/bGUtTWFjQm9vay1B/aXItNDk0NDk0NTA4/LWktMS0xMjAwV3gx/MjAwSC5qcGVn">
+<div class="action">
+<button class="prevBtn">Previous</button>
+<button class="nextBtn">Next</button>
+<button class="favoriteBtn">Favorite</button>
+<button class="buyBtn">Buy</button>
+<button class="deleteBtn">Delete</button>
+</div>
+</div>
+
+</div>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>

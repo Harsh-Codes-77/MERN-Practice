@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+    .box{
+      width: 200px;
+      height: 200px;
+      background: gray;
+      margin-bottom: 20px;
+    }
+
+    .red{
+      background: red;
+    }
+
+    .circle{
+      border-radius: 50%;
+    }
+
+    .border{
+      border: 5px solid black;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="box" class="box"></div>
+  <button id="add">Add red</button>
+  <button id="remove">Remove red</button>
+  <button id="toggle">Toggle Circle</button>
+  <button id="replace">Replace red with border</button>
+  <button id="contains">Contains red</button>
+
+  <script>
+
+    // classList.add() - add a class to the element
+    // classList.remove() - remove a class from the element
+    // classList.toggle() - toggle a class on the element means if the class is present then remove it and if the class is not present then add it
+    // classList.replace() - replace a class with another class
+    // classList.contains() - check if the element has a class
+
+    // const box = document.getElementById('box');
+    // const addBtn = document.getElementById('add');
+
+    // addBtn.addEventListener('click', () => {
+    //   box.classList.add('red');
+    // });
+
+    // const removeBtn = document.getElementById('remove');
+    // removeBtn.addEventListener('click', () => {
+    //   box.classList.remove('red');
+    // });
+
+    // const toggleBtn = document.getElementById('toggle');
+    // toggleBtn.addEventListener('click', () => {
+    //   box.classList.toggle('circle');
+    // });
+
+    // const replaceBtn = document.getElementById('replace');
+    // replaceBtn.addEventListener('click', () => {
+    //   box.classList.replace('red', 'border');
+    // });
+
+    // const containsBtn = document.getElementById('contains');
+    // containsBtn.addEventListener('click', () => {
+    //   const hasRed = box.classList.contains('red');
+    //   alert(`Element has 'red' class: ${hasRed}`);
+    // });
+
+  </script>
+
+</body>
+</html>

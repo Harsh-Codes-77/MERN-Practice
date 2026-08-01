@@ -64,7 +64,7 @@ canvas.addEventListener('dblclick', () => {
 
 canvas.addEventListener('contextmenu', (event) => {
     event.preventDefault();
-    const randomColor = `hsl(${Math.random() * 360}, 80%, 50%)`;
+    const randomColor = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#33FFF5', '#1e1e1e'][Math.floor(Math.random() * 6)];
     brushColor = randomColor;
     alert(`Brush color changed to ${randomColor}`);
 });

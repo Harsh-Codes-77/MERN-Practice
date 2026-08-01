@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Elements States -->
+     <!-- Disable & Enable -->
+      <input type="text" id="username" placeholder="Enter your username">
+      <br>
+      <button id="submitBtn">Submit</button>
+      <br>
+      <br>
+      <button id="disableBtn">Disable Submit</button>
+      <button id="enableBtn">Enable Submit</button>
+
+      <br>
+      <br>
+
+      <button id="showParaBtn">ShowPara</button>
+      <button id="hideParaBtn">HidePara</button>
+      <p id="demoPara">This is a paragraph.</p>
+
+      <input type="password" id="password" placeholder="Enter your password">
+      <br>
+      <button id="toggle">Toggle</button>
+
+      <script>
+        const submitBtn = document.getElementById('submitBtn');
+        const disableBtn = document.getElementById('disableBtn');
+        const enableBtn = document.getElementById('enableBtn');
+
+        disableBtn.addEventListener('click', () => {
+            submitBtn.disabled = true;
+        });
+
+        enableBtn.addEventListener('click', () => {
+            submitBtn.disabled = false;
+        });
+
+
+
+
+        const showParaBtn = document.getElementById('showParaBtn');
+        const hideParaBtn = document.getElementById('hideParaBtn'); 
+        const demoPara = document.getElementById('demoPara');
+
+        showParaBtn.addEventListener('click', () => {
+            demoPara.style.display = 'block';
+        })
+
+        hideParaBtn.addEventListener('click', () => {
+            demoPara.style.display = 'none';
+        })
+
+        const toggleBtn = document.getElementById('toggle');
+        const passwordInput = document.getElementById('password');
+
+        toggleBtn.addEventListener('click', () => {
+            if(passwordInput.type === 'password'){
+                passwordInput.type = 'text';
+                toggleBtn.innerText = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.innerText = 'Show';
+            }
+        })
+      </script>
+</body>
+</html>
